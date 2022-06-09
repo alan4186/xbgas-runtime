@@ -1,0 +1,197 @@
+-------------------------------------------------------------------------------
+lsb_release -a
+-------------------------------------------------------------------------------
+LSB Version:	core-11.1.0ubuntu2-noarch:printing-11.1.0ubuntu2-noarch:security-11.1.0ubuntu2-noarch
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.4 LTS
+Release:	20.04
+Codename:	focal
+
+-------------------------------------------------------------------------------
+uname -a
+-------------------------------------------------------------------------------
+Linux hostname 5.13.0-44-generic #49~20.04.1-Ubuntu SMP Wed May 18 18:44:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+
+-------------------------------------------------------------------------------
+lscpu
+-------------------------------------------------------------------------------
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   48 bits physical, 48 bits virtual
+CPU(s):                          24
+On-line CPU(s) list:             0-23
+Thread(s) per core:              2
+Core(s) per socket:              12
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       AuthenticAMD
+CPU family:                      25
+Model:                           33
+Model name:                      AMD Ryzen 9 5900X 12-Core Processor
+Stepping:                        0
+Frequency boost:                 enabled
+CPU MHz:                         2200.000
+CPU max MHz:                     4950.1948
+CPU min MHz:                     2200.0000
+BogoMIPS:                        7386.07
+Virtualization:                  AMD-V
+L1d cache:                       384 KiB
+L1i cache:                       384 KiB
+L2 cache:                        6 MiB
+L3 cache:                        64 MiB
+NUMA node0 CPU(s):               0-23
+Vulnerability Itlb multihit:     Not affected
+Vulnerability L1tf:              Not affected
+Vulnerability Mds:               Not affected
+Vulnerability Meltdown:          Not affected
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, IBRS_FW, STIBP always-on, RSB filling
+Vulnerability Srbds:             Not affected
+Vulnerability Tsx async abort:   Not affected
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe
+                                 1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2
+                                  movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skini
+                                 t wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgs
+                                 base bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_oc
+                                 cup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean fl
+                                 ushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_
+                                 recov succor smca fsrm
+
+-------------------------------------------------------------------------------
+cat /proc/meminfo
+-------------------------------------------------------------------------------
+MemTotal:       65761852 kB
+MemFree:        31036856 kB
+MemAvailable:   62103228 kB
+Buffers:          217796 kB
+Cached:         30762508 kB
+SwapCached:            0 kB
+Active:          6973892 kB
+Inactive:       26139156 kB
+Active(anon):       2396 kB
+Inactive(anon):  2153164 kB
+Active(file):    6971496 kB
+Inactive(file): 23985992 kB
+Unevictable:          80 kB
+Mlocked:              80 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               320 kB
+Writeback:             0 kB
+AnonPages:       2132840 kB
+Mapped:           601736 kB
+Shmem:             31316 kB
+KReclaimable:     833764 kB
+Slab:            1080920 kB
+SReclaimable:     833764 kB
+SUnreclaim:       247156 kB
+KernelStack:       17536 kB
+PageTables:        29200 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    32880924 kB
+Committed_AS:    8230512 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       59020 kB
+VmallocChunk:          0 kB
+Percpu:            49152 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      753912 kB
+DirectMap2M:    15935488 kB
+DirectMap1G:    50331648 kB
+
+-------------------------------------------------------------------------------
+inxi -F -c0
+-------------------------------------------------------------------------------
+System:    Host: hostname Kernel: 5.13.0-44-generic x86_64 bits: 64 Console: tty 4 Distro: Ubuntu 20.04.4 LTS (Focal Fossa)
+Machine:   Type: Desktop System: ASUS product: N/A v: N/A serial: <superuser/root required>
+           Mobo: ASUSTeK model: Pro WS X570-ACE v: Rev X.0x serial: <superuser/root required> UEFI: American Megatrends
+           v: 3601 date: 05/26/2021
+CPU:       Topology: 12-Core model: AMD Ryzen 9 5900X bits: 64 type: MT MCP L2 cache: 6144 KiB
+           Speed: 2192 MHz min/max: 2200/4950 MHz Core speeds (MHz): 1: 2192 2: 2194 3: 2193 4: 2193 5: 2192 6: 2193 7: 2193
+           8: 2196 9: 2195 10: 2195 11: 2195 12: 2191 13: 2193 14: 2194 15: 2194 16: 2193 17: 2195 18: 2191 19: 2193 20: 2190
+           21: 2193 22: 2193 23: 2214 24: 2195
+Graphics:  Device-1: Advanced Micro Devices [AMD/ATI] Lexa XT [Radeon PRO WX 2100] driver: amdgpu v: kernel
+           Display: server: X.org 1.20.13 driver: amdgpu tty: 210x71
+           Message: Advanced graphics data unavailable in console. Try -G --display
+Audio:     Device-1: AMD Baffin HDMI/DP Audio [Radeon RX 550 640SP / RX 560/560X] driver: snd_hda_intel
+           Device-2: Advanced Micro Devices [AMD] Starship/Matisse HD Audio driver: snd_hda_intel
+           Sound Server: ALSA v: k5.13.0-44-generic
+Network:   Device-1: Intel I211 Gigabit Network driver: igb
+           IF: enp4s0 state: up speed: 1000 Mbps duplex: full mac: 24:4b:fe:de:11:f0
+           Device-2: Realtek RTL8111/8168/8411 PCI Express Gigabit Ethernet driver: r8169
+           IF: enp5s0f1 state: down mac: 24:4b:fe:de:11:f1
+           Device-3: Mellanox MT27500 Family [ConnectX-3] driver: mlx4_core
+           IF: enp10s0 state: down mac: e4:1d:2d:72:d7:20
+           IF-ID-1: docker0 state: down mac: 02:42:c9:bd:a4:87
+Drives:    Local Storage: total: 1.82 TiB used: 929.82 GiB (49.9%)
+           ID-1: /dev/nvme0n1 vendor: Samsung model: SSD 980 PRO 2TB size: 1.82 TiB
+Partition: ID-1: / size: 1.79 TiB used: 929.81 GiB (50.7%) fs: ext4 dev: /dev/nvme0n1p2
+Sensors:   System Temperatures: cpu: 30.4 C mobo: N/A gpu: amdgpu temp: 34 C
+           Fan Speeds (RPM): N/A gpu: amdgpu fan: 1978
+Info:      Processes: 477 Uptime: 9d 22h 58m Memory: 62.72 GiB used: 3.59 GiB (5.7%) Init: systemd runlevel: 5 Shell: bash
+           inxi: 3.0.38
+
+-------------------------------------------------------------------------------
+lsblk -a
+-------------------------------------------------------------------------------
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0         7:0    0     4K  1 loop /snap/bare/5
+loop1         7:1    0    47M  1 loop /snap/snapd/16010
+loop2         7:2    0 111.7M  1 loop /snap/core/13250
+loop3         7:3    0   219M  1 loop /snap/gnome-3-34-1804/77
+loop4         7:4    0  55.5M  1 loop /snap/core18/2344
+loop5         7:5    0         1 loop 
+loop6         7:6    0  54.2M  1 loop /snap/snap-store/558
+loop7         7:7    0   219M  1 loop /snap/gnome-3-34-1804/72
+loop8         7:8    0  81.3M  1 loop /snap/gtk-common-themes/1534
+loop9         7:9    0 113.9M  1 loop /snap/core/13308
+loop10        7:10   0 248.8M  1 loop /snap/gnome-3-38-2004/99
+loop11        7:11   0  55.5M  1 loop /snap/core18/2409
+loop12        7:12   0  44.7M  1 loop /snap/snapd/15904
+loop13        7:13   0  61.9M  1 loop /snap/core20/1518
+loop14        7:14   0  65.2M  1 loop /snap/gtk-common-themes/1519
+loop15        7:15   0  61.9M  1 loop /snap/core20/1494
+loop16        7:16   0    51M  1 loop /snap/snap-store/547
+loop17        7:17   0 254.1M  1 loop /snap/gnome-3-38-2004/106
+loop18        7:18   0         0 loop 
+nvme0n1     259:0    0   1.8T  0 disk 
+├─nvme0n1p1 259:1    0   512M  0 part /boot/efi
+└─nvme0n1p2 259:2    0   1.8T  0 part /
+
+-------------------------------------------------------------------------------
+lsscsi -s
+-------------------------------------------------------------------------------
+[N:0:6:1]    disk    Samsung SSD 980 PRO 2TB__1                 /dev/nvme0n1  2.00TB
+
+
+-------------------------------------------------------------------------------
+gcc --version
+-------------------------------------------------------------------------------
+gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+-------------------------------------------------------------------------------
+riscv64-unknown-elf-gcc --version
+-------------------------------------------------------------------------------
+riscv64-unknown-elf-gcc (GCC) 11.1.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
